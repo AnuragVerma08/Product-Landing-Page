@@ -1,0 +1,12 @@
+#header{
+    display: flex;
+}
+
+#header-img{
+    height: 40px;
+    width: 40px;
+}
+
+#email{
+    display: block;
+}
