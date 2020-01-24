@@ -1,12 +1,14 @@
-#header{
-    display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#header-img{
-    height: 40px;
-    width: 40px;
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
 }
 
-#email{
-    display: block;
+#page-wrapper {
+  position: relative;
 }
