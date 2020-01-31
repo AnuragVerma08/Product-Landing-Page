@@ -9,6 +9,52 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-#page-wrapper {
-  position: relative;
+#header{
+  display: flex;
+  padding: 1em;
+  align-items: center;
 }
+
+.logo {
+  flex-basis: 780px;
+  flex-grow: 1;
+}
+
+#header-img {
+  width: 240px;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+}
+
+li{
+  list-style-type: none;
+}
+
+ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container, #hero{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin: 1em;
+}
+.icon {
+  display: block;
+  flex-basis: 100px;
+  color: orange;
+}
+
