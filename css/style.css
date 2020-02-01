@@ -9,10 +9,52 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#hero h2{
+  margin: 1em;
+}
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin-top: 3em;
+}
+
+#video {
+  width: 560px;
+  height: 320px;
+  margin-bottom: 2em;
+}
+
+#form #email {
+  height: 2.2em;
+  width: 300px;
+}
+
+#form #submit {
+  display: block;
+  text-align: center;
+}
+
 #header{
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -50px;
   padding: 1em;
   align-items: center;
+  position: fixed;
+  background-color: #eee;
+  width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -34,27 +76,143 @@ li{
   list-style-type: none;
 }
 
-ul{
+#nav-bar ul{
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
 }
 
 .container, #hero{
   display: flex;
+  flex-wrap: wrap;
   flex-flow: column;
   align-items: center;
 }
 
 .grid {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  flex-grow: 1;
-  margin: 1em;
+  margin-bottom: 4em;
 }
 .icon {
-  display: block;
-  flex-basis: 100px;
+  flex-basis: 70px;
   color: orange;
+  margin-right: 70px;
+}
+.desc {
+  flex-basis: 810px;
 }
 
+#pricing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  text-align: center;
+  width: 320px;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button, #form #submit {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-size: 18px;
+  padding: .4em 1em;
+  border-radius: 5px;
+}
+
+.product > button:hover, #form #submit:hover {
+  background-color: orange;
+  transition: background-color .7s;
+}
+
+footer {
+  margin: 1em;
+  padding: 1.2em;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 80%;
+}
+
+footer ul li{
+  margin: 0 1em;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: .5em;
+}
+
+footer span {
+  color: rgb(145, 140, 140);
+}
+
+@media screen and (max-width: 720px){
+  #header {
+    height: 120px;
+  }
+  #video {
+  width: 360px;
+  height: 240px;
+  margin-bottom: 2em;
+}
+#form #submit {
+  margin-bottom: 2em;
+}
+#page-wrapper {
+  margin: 1em;
+}
+#hero h2{
+  width: 100%;
+  margin: 3em;
+}
+.icon{
+  margin: auto;
+}
+.desc {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.logo {
+  margin-left: 25%;
+}
+#nav-bar ul{
+  display: flex;
+  width: 90vw;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: .4em 0;
+}
+}
